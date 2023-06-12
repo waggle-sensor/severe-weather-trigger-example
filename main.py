@@ -20,13 +20,13 @@ def main():
 
 
 def suspend_all_jobs(jobs):
-    print("stopping severe weather event job...")
+    print("stopping severe weather event jobs...")
     for job in jobs:
         suspend_job(job["id"])
 
 
 def submit_all_jobs(jobs):
-    print("starting severe weather event job...")
+    print("starting severe weather event jobs...")
     for job in jobs:
         submit_job(job["id"])
 
