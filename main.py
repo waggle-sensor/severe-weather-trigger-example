@@ -8,11 +8,9 @@ WAGGLE_TOKEN = os.environ["WAGGLE_TOKEN"]
 
 
 def main():
-    # cmd = CommandRunner(token, "https://es.sagecontinuum.org")
-
     events = get_severe_weather_events()
 
-    # NOTE this job will need to be created ahead of time - this trigger simple controls suspending and resuming it
+    # NOTE we assume the user has created this job ahead of time and that this examples simple suspends / resumes it based on events
     jobs = find_jobs_with_name("severe-weather-trigger-example")
 
     if len(events) == 0:
