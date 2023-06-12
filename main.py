@@ -10,8 +10,10 @@ def main():
 
     if len(events) == 0:
         print("stopping severe weather event job...")
+        # TODO stop job with sesctl
     else:
         print("starting severe weather event job...")
+        # TODO start job with sesctl
 
 
 def get_severe_weather_events():
